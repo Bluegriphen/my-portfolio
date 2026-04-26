@@ -31,9 +31,9 @@ const Hero = () => {
       {/* RIGHT IMAGE */}
       <div className="mt-10 md:mt-0">
         <img
-          src="/profile.jpg"
+          src="src/assets/photo.jpg"
           alt="profile"
-          className="w-72 rounded-xl shadow-lg border border-cyan-500"
+          className="w-120  rounded-xl shadow-lg border border-cyan-500 m-auto"
         />
       </div>
     </section>
