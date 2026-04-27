@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
 
         {/* BUTTON */}
-        <button className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-medium
+        <button  className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-medium
                            hover:bg-cyan-300 hover:scale-105 transition duration-300 
                            shadow-md shadow-cyan-400/20">
           Get in Touch
