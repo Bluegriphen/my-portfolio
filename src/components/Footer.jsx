@@ -42,7 +42,8 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/priyankaba-solanki-a34238213/ "
+              target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full 
                          bg-[#0f172a] border border-gray-800 text-gray-400 
                          hover:text-black hover:bg-cyan-400 hover:scale-110 
@@ -51,15 +52,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
 
-            <a
-              href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full 
-                         bg-[#0f172a] border border-gray-800 text-gray-400 
-                         hover:text-black hover:bg-cyan-400 hover:scale-110 
-                         transition duration-300"
-            >
-              <FaTwitter />
-            </a>
+            
           </div>
         </div>
 

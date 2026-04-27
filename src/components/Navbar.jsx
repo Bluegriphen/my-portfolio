@@ -9,14 +9,14 @@ const Navbar = () => {
 
         {/* LOGO */}
         <h1 className="text-lg font-bold text-cyan-400 tracking-wide">
-          PriyankaDev
+          Priyanka
         </h1>
 
         {/* NAV LINKS */}
         <div className="hidden md:flex items-center gap-6 text-sm text-gray-300">
           <a href="#home" className="hover:text-cyan-400 transition">Home</a>
           <a href="#about" className="hover:text-cyan-400 transition">About</a>
-          <a href="#services" className="hover:text-cyan-400 transition">Services</a>
+          <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
           <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
           <a href="#contact" className="hover:text-cyan-400 transition">Contact</a>
         </div>
