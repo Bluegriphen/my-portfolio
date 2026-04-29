@@ -24,19 +24,19 @@ const Hero = () => {
       <div className="max-w-xl relative z-10">
 
         <p className="text-cyan-400 mb-2">
-          Welcome to my portfolio
+          - - WELCOME TO MY PORTFOLIO
         </p>
 
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-2">
+        <h1 className="text-4xl md:text-7xl font-bold leading-tight mt-2">
           Hi, I'm <span className="text-cyan-400">Priyanka</span>
         </h1>
 
         <p className="mt-4 text-gray-400">
-          Web Developer | React | Node.js | Manual Tester
+          Web Developer  ·  Manual Tester   ·  MERN Stack
         </p>
 
         <p className="mt-4 text-gray-500">
-          I build responsive web applications and ensure quality through testing.
+          I build responsive, real-world web applications and ensure quality through structured testing. Currently finishing my B.E. in Computer Engineering.
         </p>
 
         {/* BUTTONS */}
@@ -45,7 +45,7 @@ const Hero = () => {
           {/* DOWNLOAD RESUME */}
           <button
             onClick={handleDownload}
-            className="bg-cyan-400 text-black px-6 py-3 rounded-lg font-medium 
+            className="bg-cyan-400 text-black px-6 py-3 rounded-full font-medium 
                        hover:bg-cyan-300 hover:scale-105 transition duration-300 
                        shadow-lg shadow-cyan-400/20"
           >
@@ -55,7 +55,7 @@ const Hero = () => {
           {/* CONTACT */}
           <a
             href="#contact"
-            className="border border-cyan-400 px-6 py-3 rounded-lg 
+            className="border border-cyan-400 px-6 py-3 rounded-full 
                        hover:bg-cyan-400 hover:text-black transition duration-300"
           >
             Contact Me
