@@ -21,7 +21,7 @@ const About = () => {
       <div className="grid md:grid-cols-3 gap-6 relative z-10">
 
         {[
-          { value: "50+", label: "Projects & Tasks" },
+          { value: "5+", label: "Projects & Tasks" },
           { value: "Intern", label: "Experience at Orionik" },
           { value: "MERN", label: "Stack Developer" },
         ].map((item, i) => (

@@ -4,13 +4,15 @@ import foodMart from "./food.png"
 import newsApp from "./News.png"
 import portfolio from "./portfolio.png"
 import eyeHospital from "./Hospital.png"
+import pos from "./pos.png"
 const assets = {
   vsitrPaper,
   vsitrPaper1,
   foodMart,
   newsApp,
   portfolio,
-  eyeHospital
+  eyeHospital,
+  pos,
 }
 
 export default assets

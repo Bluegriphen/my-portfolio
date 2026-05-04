@@ -24,8 +24,7 @@ const projects = [
   tech: ["React", "Bootstrap", "Fetch API"],
   live: "#",
   github: "https://github.com/Bluegriphen/news-website", 
-  image: assets.newsApp, // assets mein image add karna
-  details: "Ek React aur Bootstrap se bana News App jo Fetch API ke through real-time news fetch karta hai. Users alag-alag categories jaise Sports, Technology, Business mein news padh sakte hain.",
+  image: assets.newsApp, 
   features: [
     "Real-time News Fetching",
     "Category wise Filter",
@@ -39,10 +38,9 @@ const projects = [
   title: "Personal Portfolio",
   desc: "Modern developer portfolio built with React and Tailwind CSS showcasing projects and skills.",
   tech: ["React", "Tailwind CSS"],
-  live: "#", // jab deploy karo tab link daal dena
+  live: "#", 
   github: "https://github.com/Bluegriphen/my-portfolio", // sahi link daal dena
-  image: assets.portfolio, // assets mein image add karna
-  details: "Yeh mera personal portfolio hai jo React aur Tailwind CSS se bana hai. Isme projects, skills, aur contact section included hain with smooth animations aur responsive design.",
+  image: assets.portfolio, 
   features: [
     "Responsive Design",
     "Project Detail Pages",
@@ -58,13 +56,27 @@ const projects = [
   live: "#",
   github: "https://github.com/Bluegriphen/Naman_Hospital", // sahi link daal dena
   image: assets.eyeHospital, // baad mein add karna
-  details: "Ek full-stack Eye Hospital website jisme patients online appointment book kar sakte hain. Backend Node.js aur Express se bana hai aur data PostgreSQL database mein store hota hai.",
   features: [
     "Online Appointment Booking",
     "Patient Management",
     "Responsive Design",
     "REST API Integration",
     "PostgreSQL Database",
+  ],
+},
+{
+  id: "aarav-pos",
+  title: "AaravPOS - Salon Management System",
+  desc: "Beauty parlour and salon management system built during internship with React, Redux and Reactstrap.",
+  tech: ["React", "Redux", "Reactstrap"],
+  live: "https://aaravpos.com/",
+  github: "#", 
+  image: assets.pos, 
+  features: [
+    "Salon & Parlour Management",
+    "State Management with Redux",
+    "Responsive UI with Reactstrap",
+    "Booking & Appointment System",
   ],
 },
 ];
@@ -143,16 +155,18 @@ const Projects = () => {
                 </a>:<span className="bg-gray-700 text-gray-500 px-4 py-2 rounded-lg text-sm cursor-not-allowed">
     Coming Soon
   </span>}
-               
-
-                <a
+               {project.github !== "#"? <a
                   href={project.github}
                   target="_blank"
                   className="border border-cyan-400 px-4 py-2 rounded-lg text-sm 
                              hover:bg-cyan-400 hover:text-black transition"
                 >
                   GitHub
-                </a>
+                </a>:<span className="bg-gray-700 text-gray-500 px-4 py-2 rounded-lg text-sm cursor-not-allowed">
+    Disabled
+  </span>}
+
+               
               </div>
 
             </div>

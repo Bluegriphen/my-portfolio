@@ -15,7 +15,7 @@ import {
   SiExpress,
   SiJavascript,
   SiBootstrap,
-   // ✅ VS CODE ICON
+   //  VS CODE ICON
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { MdBugReport, MdChecklist } from "react-icons/md";

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -6,6 +7,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -13,7 +15,31 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+    setLoading(true);
+
+     emailjs.send(
+      "service_0xdbtih",
+      "template_a19pca8",
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+      },
+      "uNy-Ul6mk2HDizhlf"
+    )
+    .then(()=>{
+       setLoading(false);
+      alert("Message sent successfully! ✅");
+      setForm({ name: "", email: "", message: "" });
+
+    })
+    .catch((error) => {
+      setLoading(false);
+      console.error(error);
+      alert("Something went wrong. Please try again ❌");
+    });
+
+
     alert("Message sent!");
     setForm({ name: "", email: "", message: "" });
   };
@@ -112,11 +138,12 @@ const Contact = () => {
           {/* BUTTON */}
           <button
             type="submit"
+            disabled={loading}
             className="w-full bg-cyan-400 py-3 rounded-lg font-semibold 
                        hover:bg-cyan-500 hover:scale-[1.02] 
                        transition duration-300 shadow-lg shadow-cyan-400/20"
           >
-            Send Message
+             {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
