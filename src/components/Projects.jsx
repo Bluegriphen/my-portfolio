@@ -38,7 +38,7 @@ const projects = [
   title: "Personal Portfolio",
   desc: "Modern developer portfolio built with React and Tailwind CSS showcasing projects and skills.",
   tech: ["React", "Tailwind CSS"],
-  live: "#", 
+  live: "https://priyanka-portfolio-azure.vercel.app/", 
   github: "https://github.com/Bluegriphen/my-portfolio", // sahi link daal dena
   image: assets.portfolio, 
   features: [
