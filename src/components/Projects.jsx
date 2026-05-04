@@ -17,6 +17,56 @@ const projects = [
     github: "https://github.com/Bluegriphen/food-mart",
     image: assets.foodMart,
   },
+  {
+  id: "news-app",
+  title: "News Paper App",
+  desc: "React-based news application fetching real-time articles using News API with category filters.",
+  tech: ["React", "Bootstrap", "Fetch API"],
+  live: "#",
+  github: "https://github.com/Bluegriphen/news-website", 
+  image: assets.newsApp, // assets mein image add karna
+  details: "Ek React aur Bootstrap se bana News App jo Fetch API ke through real-time news fetch karta hai. Users alag-alag categories jaise Sports, Technology, Business mein news padh sakte hain.",
+  features: [
+    "Real-time News Fetching",
+    "Category wise Filter",
+    "Responsive Design with Bootstrap",
+    "News API Integration",
+  ],
+  
+},
+{
+  id: "portfolio",
+  title: "Personal Portfolio",
+  desc: "Modern developer portfolio built with React and Tailwind CSS showcasing projects and skills.",
+  tech: ["React", "Tailwind CSS"],
+  live: "#", // jab deploy karo tab link daal dena
+  github: "https://github.com/Bluegriphen/my-portfolio", // sahi link daal dena
+  image: assets.portfolio, // assets mein image add karna
+  details: "Yeh mera personal portfolio hai jo React aur Tailwind CSS se bana hai. Isme projects, skills, aur contact section included hain with smooth animations aur responsive design.",
+  features: [
+    "Responsive Design",
+    "Project Detail Pages",
+    "Smooth Animations",
+    "React Router Navigation",
+  ],
+},
+{
+  id: "eye-hospital",
+  title: "Naman Hospital Website",
+  desc: "Full-stack hospital website with appointment booking, patient management using React, Node, Express and PostgreSQL.",
+  tech: ["React", "Tailwind CSS", "Node", "Express", "PostgreSQL"],
+  live: "#",
+  github: "https://github.com/Bluegriphen/Naman_Hospital", // sahi link daal dena
+  image: assets.eyeHospital, // baad mein add karna
+  details: "Ek full-stack Eye Hospital website jisme patients online appointment book kar sakte hain. Backend Node.js aur Express se bana hai aur data PostgreSQL database mein store hota hai.",
+  features: [
+    "Online Appointment Booking",
+    "Patient Management",
+    "Responsive Design",
+    "REST API Integration",
+    "PostgreSQL Database",
+  ],
+},
 ];
 
 const Projects = () => {
