@@ -15,7 +15,7 @@ const projects = [
     tech: ["MongoDB", "Express", "React", "Node"],
     live: "#",
     github: "https://github.com/Bluegriphen/food-mart",
-    image: "/project2.png",
+    image: assets.foodMart,
   },
 ];
 
@@ -83,14 +83,17 @@ const Projects = () => {
 
               {/* BUTTONS */}
               <div className="flex gap-4">
-                <a
+                {project.live !== "#"?  <a
                   href={project.live}
                   target="_blank"
                   className="bg-cyan-400 text-black px-4 py-2 rounded-lg text-sm 
                              hover:bg-cyan-300 transition"
                 >
                   Live Demo
-                </a>
+                </a>:<span className="bg-gray-700 text-gray-500 px-4 py-2 rounded-lg text-sm cursor-not-allowed">
+    Coming Soon
+  </span>}
+               
 
                 <a
                   href={project.github}
