@@ -1,18 +1,20 @@
+import assets from "../assets/assets.js";
+
 const projects = [
   {
     title: "VSITR Paper Portal",
     desc: "React-based platform for students to download academic papers with Firebase integration and admin panel.",
     tech: ["React", "Firebase"],
     live: "https://vsitr-paper.web.app/",
-    github: "https://github.com/Bluegriphen",
-    image: "/project1.png",
+    github: "https://github.com/Bluegriphen/vsitr-paper",
+    image: assets.vsitrPaper1,
   },
   {
     title: "Food Delivery App",
     desc: "Full-stack MERN application with authentication, admin panel, and user interface.",
     tech: ["MongoDB", "Express", "React", "Node"],
     live: "#",
-    github: "https://github.com/Bluegriphen",
+    github: "https://github.com/Bluegriphen/food-mart",
     image: "/project2.png",
   },
 ];
