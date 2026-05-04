@@ -1,20 +1,84 @@
+import assets from "../assets/assets.js";
+
 const projects = [
   {
     title: "VSITR Paper Portal",
     desc: "React-based platform for students to download academic papers with Firebase integration and admin panel.",
     tech: ["React", "Firebase"],
     live: "https://vsitr-paper.web.app/",
-    github: "https://github.com/Bluegriphen",
-    image: "/project1.png",
+    github: "https://github.com/Bluegriphen/vsitr-paper",
+    image: assets.vsitrPaper1,
   },
   {
     title: "Food Delivery App",
     desc: "Full-stack MERN application with authentication, admin panel, and user interface.",
     tech: ["MongoDB", "Express", "React", "Node"],
     live: "#",
-    github: "https://github.com/Bluegriphen",
-    image: "/project2.png",
+    github: "https://github.com/Bluegriphen/food-mart",
+    image: assets.foodMart,
   },
+  {
+  id: "news-app",
+  title: "News Paper App",
+  desc: "React-based news application fetching real-time articles using News API with category filters.",
+  tech: ["React", "Bootstrap", "Fetch API"],
+  live: "#",
+  github: "https://github.com/Bluegriphen/news-website", 
+  image: assets.newsApp, 
+  features: [
+    "Real-time News Fetching",
+    "Category wise Filter",
+    "Responsive Design with Bootstrap",
+    "News API Integration",
+  ],
+  
+},
+{
+  id: "portfolio",
+  title: "Personal Portfolio",
+  desc: "Modern developer portfolio built with React and Tailwind CSS showcasing projects and skills.",
+  tech: ["React", "Tailwind CSS"],
+  live: "#", 
+  github: "https://github.com/Bluegriphen/my-portfolio", // sahi link daal dena
+  image: assets.portfolio, 
+  features: [
+    "Responsive Design",
+    "Project Detail Pages",
+    "Smooth Animations",
+    "React Router Navigation",
+  ],
+},
+{
+  id: "eye-hospital",
+  title: "Naman Hospital Website",
+  desc: "Full-stack hospital website with appointment booking, patient management using React, Node, Express and PostgreSQL.",
+  tech: ["React", "Tailwind CSS", "Node", "Express", "PostgreSQL"],
+  live: "#",
+  github: "https://github.com/Bluegriphen/Naman_Hospital", // sahi link daal dena
+  image: assets.eyeHospital, // baad mein add karna
+  features: [
+    "Online Appointment Booking",
+    "Patient Management",
+    "Responsive Design",
+    "REST API Integration",
+    "PostgreSQL Database",
+  ],
+},
+{
+  id: "aarav-pos",
+  title: "AaravPOS - Salon Management System",
+  desc: "Beauty parlour and salon management system built during internship with React, Redux and Reactstrap.",
+  tech: ["React", "Redux", "Reactstrap"],
+  live: "https://aaravpos.com/",
+  github: "#", 
+  image: assets.pos, 
+  features: [
+    "Salon & Parlour Management",
+    "State Management with Redux",
+    "Responsive UI with Reactstrap",
+    "Booking & Appointment System",
+  ],
+},
 ];
 
 const Projects = () => {
@@ -81,23 +145,28 @@ const Projects = () => {
 
               {/* BUTTONS */}
               <div className="flex gap-4">
-                <a
+                {project.live !== "#"?  <a
                   href={project.live}
                   target="_blank"
                   className="bg-cyan-400 text-black px-4 py-2 rounded-lg text-sm 
                              hover:bg-cyan-300 transition"
                 >
                   Live Demo
-                </a>
-
-                <a
+                </a>:<span className="bg-gray-700 text-gray-500 px-4 py-2 rounded-lg text-sm cursor-not-allowed">
+    Coming Soon
+  </span>}
+               {project.github !== "#"? <a
                   href={project.github}
                   target="_blank"
                   className="border border-cyan-400 px-4 py-2 rounded-lg text-sm 
                              hover:bg-cyan-400 hover:text-black transition"
                 >
                   GitHub
-                </a>
+                </a>:<span className="bg-gray-700 text-gray-500 px-4 py-2 rounded-lg text-sm cursor-not-allowed">
+    Disabled
+  </span>}
+
+               
               </div>
 
             </div>
